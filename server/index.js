@@ -4,10 +4,16 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// ✅ Middleware to parse JSON data
+// ✅ Middleware to parse JSON
 app.use(express.json());
 
-console.log("🚀 [DEBUG] Botpress has triggered saveToCSV action.");
+// ✅ Serve Static Files (Make sure botpress.html is inside 'public' folder)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// ✅ Serve botpress.html at the root `/`
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'botpress.html'));
+});
 
 // ✅ Botpress Webhook to receive user data
 app.post('/botpress-webhook', (req, res) => {
@@ -32,10 +38,8 @@ app.post('/botpress-webhook', (req, res) => {
         try {
             fs.appendFileSync(filePath, textToSave);
             console.log("✅ [SUCCESS] User data saved successfully in:", filePath);
-            return { success: true, message: 'User data saved to text file' };
         } catch (error) {
             console.error("❌ [ERROR] Failed to write to file:", error);
-            return { success: false, message: error.message };
         }
     }
 
