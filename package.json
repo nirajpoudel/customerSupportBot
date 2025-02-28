@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^9.15.1",
+    "google-spreadsheet": "^4.1.4"
+  },
+
+
+{
+  "name": "botpress-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "./bp"
+  },
+  "dependencies": {
+     "csv-writer": "^1.6.0",}
+}
