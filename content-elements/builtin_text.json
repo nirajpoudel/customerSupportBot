@@ -1,0 +1,123 @@
+[
+  {
+    "id": "builtin_text-WQO4U8",
+    "formData": {
+      "text$en": "Hello! I can help you save your contact details. Let's start with your name. Please type your name.\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-25T19:22:51.197Z",
+    "modifiedOn": "2025-02-25T19:22:51.197Z"
+  },
+  {
+    "id": "builtin_text-QM7bQX",
+    "formData": {
+      "text$en": "Great! Now please provide your email address.\n",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-25T19:25:46.205Z",
+    "modifiedOn": "2025-02-25T19:25:46.205Z"
+  },
+  {
+    "id": "builtin_text-2KOd5Y",
+    "formData": {
+      "text$en": "Lastly, please provide your phone number (10 digits).",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-25T19:27:19.508Z",
+    "modifiedOn": "2025-02-25T19:27:19.508Z"
+  },
+  {
+    "id": "builtin_text-2Vs_iP",
+    "formData": {
+      "text$en": "🗝️Welcome to Key Innovations Inc., your trusted partner in promotional products and strategic branding solutions. Our mission is to help businesses like yours build brand awareness and leave lasting impressions through high-quality, customized merchandise.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-25T19:28:43.370Z",
+    "modifiedOn": "2025-02-27T17:54:27.068Z"
+  },
+  {
+    "id": "builtin_text-iuLOpl",
+    "formData": {
+      "text$en": "your name is {{user.name}}. your email is {{user.email}} and your phone number is {{user.phone}} .",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-25T19:33:13.826Z",
+    "modifiedOn": "2025-02-25T20:07:24.002Z"
+  },
+  {
+    "id": "builtin_text-sofbQ6",
+    "formData": {
+      "text$en": "🌍 Who We Are\nWe are a team of branding experts dedicated to delivering innovative solutions that represent your brand with precision and creativity. Our collaborative approach ensures that every product we offer aligns with your company’s values and marketing goals.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T17:58:23.009Z",
+    "modifiedOn": "2025-02-27T17:58:23.009Z"
+  },
+  {
+    "id": "builtin_text-HuLSDJ",
+    "formData": {
+      "text$en": "🛍️ What We Do\nWe offer a wide range of promotional products designed to showcase your brand in everyday life. Our categories include:\n\nEco-Friendly Products🟢: Reusable water bottles, sustainable tote bags, and bamboo items\nBranded Apparel👕: Custom T-shirts, hoodies, jackets, and headwear\nTech Accessories⚙️: USB drives, wireless chargers, and Bluetooth speakers\nOffice Supplies🏢: Notebooks, pens, portfolios, and desk items\nEvent & Trade Show Essentials🧑‍🤝‍🧑: Banners, lanyards, keychains, and giveaways\nCorporate Gifts🎁: Personalized drinkware, gift sets, and travel accessories\nIndustry-Specific Solutions🏗️: Durable branded gear for construction and fieldwork.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:01:16.804Z",
+    "modifiedOn": "2025-02-27T18:01:16.804Z"
+  },
+  {
+    "id": "builtin_text-EXvqkJ",
+    "formData": {
+      "text$en": "🎨 Customization Expertise\nWe offer a variety of customization methods, including screen printing, embroidery, laser engraving, debossing, and full-color digital printing, ensuring your logo looks its best on every product.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:01:36.559Z",
+    "modifiedOn": "2025-02-27T18:01:36.559Z"
+  },
+  {
+    "id": "builtin_text-U4VbwO",
+    "formData": {
+      "text$en": "💡 Why Choose Us?\n✅ Strategic branding solutions to elevate your brand visibility.\n✅ High-quality products that reflect your company’s values.\n✅ Personalized customer service focused on your success.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:01:53.610Z",
+    "modifiedOn": "2025-02-27T18:02:06.720Z"
+  },
+  {
+    "id": "builtin_text-srXiLy",
+    "formData": {
+      "text$en": "Here are some sample products you can explore: innovative, stylish, practical, sustainable, high-quality, customized, trendy, versatile, functional, durable, branded, unique, impactful, creative, and premium. 😊",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T21:34:15.651Z",
+    "modifiedOn": "2025-02-27T21:34:15.651Z"
+  },
+  {
+    "id": "builtin_text-p4iEZa",
+    "formData": {
+      "text$en": "📞 Contact Us – Key Innovations Inc.\n\nHave questions or need assistance? We're here to help!\n\n📧 Email: support@keyinnovations.com\n📞 Phone: (123) 456-7890\n🌍 Website: www.keyinnovations.com\n🏢 Office Hours: Monday – Friday | 9 AM – 5 PM (Your Time Zone)\n\nFeel free to reach out, and we’ll be happy to assist you! 😊",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T21:43:24.946Z",
+    "modifiedOn": "2025-02-27T21:43:24.946Z"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "builtin_carousel-CfzZNB",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": " Mug & Tumbler Gift Set",
+          "subtitle": "D133 - Lou Double Wall Mug 14ozPowder Coated matte finish304 Stainless Steel with plastic liner and handle.FDA, CPSIA, Prop65 and BPA FreeD132 - Asador Double Wall TumblerPowder Coated 304 Stainless Steel with Plastic linerDouble Walled insulated tumbler.FDA, CPSIA, Prop65, BPA Free",
+          "image": "/api/v1/bots/test_bot/media/z7akn3nj63g7r75dqc36-mug.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://ca.stregisgrp.com/channel/home-office/detail/G133-132"
+            }
+          ]
+        },
+        {
+          "title": "Teddy Bear/Bottle Gift Set",
+          "subtitle": "G006-T - Chester the Teddy BearSuper soft plush, stuffed teddy bearSoft plush snout, ears and short tailDressed with fashionable T shirtD032 - Single pin Bottle 17ozSingle wall stainless steel water bottleErgonomically curved shape fits in most standard cup holdersTwist locking mechanism for leak-proof hydration on the go",
+          "image": "/api/v1/bots/test_bot/media/3x457gsaqiwab8496ufl-bottle.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://ca.stregisgrp.com/channel/home-office/detail/G006-032"
+            }
+          ]
+        },
+        {
+          "title": "Coffee Press, Grinder & Nordic Set",
+          "subtitle": "For the expert home Barista, this exquisite 20oz Swiss Force® Coffee Press comes with the Swiss Force® Grinder, and 2 Nordic Mugs. Packaged in a satin lined presentation gift box. A beautiful gift set that will be appreciated for years to come.",
+          "image": "/api/v1/bots/test_bot/media/2j22ucwdzz50xz6k267h-grinder.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://ca.stregisgrp.com/channel/home-office/detail/G357/G357-207"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:20:23.944Z",
+    "modifiedOn": "2025-02-27T18:37:04.657Z"
+  }
+]

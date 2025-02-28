@@ -1,0 +1,427 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "introduction",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "introduction",
+      "next": [
+        {
+          "condition": "true",
+          "node": "hub"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2Vs_iP"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "0ae65f54e3",
+      "name": "ask-email",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-phone"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QM7bQX"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"email\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "16c3c3f2d1",
+      "name": "ask-phone",
+      "next": [
+        {
+          "condition": "true",
+          "node": "user-info"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-2KOd5Y"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"phone\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "a6ef6de500",
+      "name": "user-info",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-iuLOpl",
+        "saveToCSV/index {\"event\":\"{{event}}\"}"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "2399cae7ff",
+      "name": "ask-name",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-email"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-WQO4U8"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"user\",\"name\":\"name\",\"value\":\"{{event.payload.text}}\"}"
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "skill-a64ae5",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "hub",
+      "flow": "skills/choice-a64ae5.flow.json",
+      "next": [
+        {
+          "caption": "User picked [about_k...]",
+          "condition": "temp['skill-choice-ret-3grekqxind'] == \"about_key\"",
+          "node": "about_us"
+        },
+        {
+          "caption": "User picked [cus_sam]",
+          "condition": "temp['skill-choice-ret-3grekqxind'] == \"cus_sam\"",
+          "node": "product-samples"
+        },
+        {
+          "caption": "User picked [contact...]",
+          "condition": "temp['skill-choice-ret-3grekqxind'] == \"contact_us\"",
+          "node": "Contact"
+        },
+        {
+          "caption": "User picked [quit]",
+          "condition": "temp['skill-choice-ret-3grekqxind'] == \"quit\"",
+          "node": "quit"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "54b817d368",
+      "name": "about_us",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-sofbQ6",
+        "say #!builtin_text-HuLSDJ",
+        "say #!builtin_text-EXvqkJ",
+        "say #!builtin_text-U4VbwO"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-6309d7",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "product-samples",
+      "flow": "skills/choice-6309d7.flow.json",
+      "next": [
+        {
+          "caption": "User picked [apparel]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"apparel\"",
+          "node": "Apparel"
+        },
+        {
+          "caption": "User picked [bags]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"bags\"",
+          "node": "Bags"
+        },
+        {
+          "caption": "User picked [drinkwa...]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"drinkware\"",
+          "node": "Drinkware"
+        },
+        {
+          "caption": "User picked [events]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"events\"",
+          "node": "Events"
+        },
+        {
+          "caption": "User picked [leisure]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"leisure\"",
+          "node": "Leisure"
+        },
+        {
+          "caption": "User picked [Office]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"Office\"",
+          "node": "Office"
+        },
+        {
+          "caption": "User picked [recogni...]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"recognition\"",
+          "node": "Recognition"
+        },
+        {
+          "caption": "User picked [tech]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"tech\"",
+          "node": "Tech"
+        },
+        {
+          "caption": "User picked [wellness]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"wellness\"",
+          "node": "Wellness"
+        },
+        {
+          "caption": "User picked [quit]",
+          "condition": "temp['skill-choice-ret-c0h58ko0cf'] == \"quit\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "d393102b3e",
+      "name": "Drinkware",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy",
+        "say #!builtin_carousel-CfzZNB"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-094f45",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-094f45",
+      "flow": "skills/choice-094f45.flow.json",
+      "next": [
+        {
+          "caption": "User picked [other_s...]",
+          "condition": "temp['skill-choice-ret-hqg2vji2y7'] == \"other_samples\"",
+          "node": "product-samples"
+        },
+        {
+          "caption": "User picked [quit]",
+          "condition": "temp['skill-choice-ret-hqg2vji2y7'] == \"quit\"",
+          "node": ""
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "28082f32fe",
+      "name": "Bags",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "fe747b6db3",
+      "name": "Apparel",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0b10b1d592",
+      "name": "Events",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "c947177a39",
+      "name": "Leisure",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5d73dfb348",
+      "name": "Office",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "dd42eaaa29",
+      "name": "Recognition",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "61eb69d589",
+      "name": "Tech",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8108de4a4c",
+      "name": "Wellness",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-094f45"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-srXiLy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "9332d47256",
+      "name": "quit",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "25b4bc7da4",
+      "name": "Contact",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-398265"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-p4iEZa"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-398265",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-398265",
+      "flow": "skills/choice-398265.flow.json",
+      "next": [
+        {
+          "caption": "User picked [proceed]",
+          "condition": "temp['skill-choice-ret-901wa64vjh'] == \"proceed\"",
+          "node": "ask-name"
+        },
+        {
+          "caption": "User picked [quit]",
+          "condition": "temp['skill-choice-ret-901wa64vjh'] == \"quit\"",
+          "node": "quit"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    }
+  ]
+}

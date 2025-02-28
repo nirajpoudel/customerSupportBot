@@ -1,0 +1,139 @@
+[
+  {
+    "id": "builtin_single-choice-2CffWy",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "About Key Innovation Inc.",
+          "value": "about_key"
+        },
+        {
+          "title": "See Customized Samples",
+          "value": "cus_sam"
+        },
+        {
+          "title": "Contact Us",
+          "value": "contact_us"
+        },
+        {
+          "title": "Quit",
+          "value": "quit"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "displayInMessage$en": true,
+      "typing$en": true,
+      "text$en": "How can I help you today?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T17:56:01.651Z",
+    "modifiedOn": "2025-02-27T18:33:27.830Z"
+  },
+  {
+    "id": "builtin_single-choice-zoK4k_",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Apparel",
+          "value": "apparel"
+        },
+        {
+          "title": "Bags",
+          "value": "bags"
+        },
+        {
+          "title": "Drinkware",
+          "value": "drinkware"
+        },
+        {
+          "title": "Events",
+          "value": "events"
+        },
+        {
+          "title": "Leisure",
+          "value": "leisure"
+        },
+        {
+          "title": "Office",
+          "value": "Office"
+        },
+        {
+          "title": "Recognition",
+          "value": "recognition"
+        },
+        {
+          "title": "Tech",
+          "value": "tech"
+        },
+        {
+          "title": "Wellness",
+          "value": "wellness"
+        },
+        {
+          "title": "Quit",
+          "value": "quit"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "displayInMessage$en": true,
+      "typing$en": true,
+      "text$en": "Which product samples are you looking for?🛍️",
+      "isDropdown$en": false
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:08:33.997Z",
+    "modifiedOn": "2025-02-27T18:08:33.997Z"
+  },
+  {
+    "id": "builtin_single-choice-t2vi6-",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Explore other samples",
+          "value": "other_samples"
+        },
+        {
+          "title": "Quit",
+          "value": "quit"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "displayInMessage$en": true,
+      "typing$en": true,
+      "text$en": "Want to know more?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:33:17.409Z",
+    "modifiedOn": "2025-02-27T18:38:03.393Z"
+  },
+  {
+    "id": "builtin_single-choice-pG95-6",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Proceed",
+          "value": "proceed"
+        },
+        {
+          "title": "Quit",
+          "value": "quit"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "displayInMessage$en": true,
+      "typing$en": true,
+      "text$en": "Would you like us to call you?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T21:46:03.098Z",
+    "modifiedOn": "2025-02-27T21:46:03.098Z"
+  }
+]

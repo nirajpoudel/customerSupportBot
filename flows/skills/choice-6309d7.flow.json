@@ -1,0 +1,131 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "c0h58ko0cf",
+    "contentId": "builtin_single-choice-zoK4k_",
+    "invalidContentId": "",
+    "keywords": {
+      "apparel": [
+        "apparel",
+        "Apparel"
+      ],
+      "bags": [
+        "bags",
+        "Bags"
+      ],
+      "drinkware": [
+        "drinkware",
+        "Drinkware"
+      ],
+      "events": [
+        "events",
+        "Events"
+      ],
+      "leisure": [
+        "leisure",
+        "Leisure"
+      ],
+      "Office": [
+        "Office"
+      ],
+      "recognition": [
+        "recognition",
+        "Recognition"
+      ],
+      "tech": [
+        "tech",
+        "Tech"
+      ],
+      "wellness": [
+        "wellness",
+        "Wellness"
+      ],
+      "quit": [
+        "quit",
+        "Quit"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-c0h58ko0cf\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-c0h58ko0cf\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-c0h58ko0cf\",\"value\": null}",
+        "say #!builtin_single-choice-zoK4k_ {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "674297"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"c0h58ko0cf\",\"contentId\":\"builtin_single-choice-zoK4k_\",\"invalidContentId\":\"\",\"keywords\":{\"apparel\":[\"apparel\",\"Apparel\"],\"bags\":[\"bags\",\"Bags\"],\"drinkware\":[\"drinkware\",\"Drinkware\"],\"events\":[\"events\",\"Events\"],\"leisure\":[\"leisure\",\"Leisure\"],\"Office\":[\"Office\"],\"recognition\":[\"recognition\",\"Recognition\"],\"tech\":[\"tech\",\"Tech\"],\"wellness\":[\"wellness\",\"Wellness\"],\"quit\":[\"quit\",\"Quit\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-c0h58ko0cf'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "602025"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"c0h58ko0cf\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-c0h58ko0cf']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "512548"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "583882"
+    }
+  ]
+}
