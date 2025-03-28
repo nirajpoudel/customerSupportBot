@@ -1,15 +1,16 @@
+# Use Node 14 as the base image
 FROM node:14
 
-# Set working directory in the container
+# Set working directory inside the container
 WORKDIR /botpress
 
-# Copy all local files into the container
+# Copy everything from your local project folder to the container
 COPY . .
 
-# Install dependencies (Botpress usually prebuilt, but include this just in case)
-RUN npm install --production
+# Make the bp binary executable (optional for Linux)
+RUN chmod +x ./bp
 
-# Expose default Botpress port
+# Expose Botpress default port
 EXPOSE 3000
 
 # Start Botpress
