@@ -1,0 +1,143 @@
+[
+  {
+    "id": "builtin_carousel-CfzZNB",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": " DrinkWare- Mug & Tumbler Gift Set",
+          "subtitle": "D133 - Lou Double Wall Mug 14ozPowder Coated matte finish304 Stainless Steel with plastic liner and handle.FDA, CPSIA, Prop65 and BPA FreeD132 - Asador Double Wall TumblerPowder Coated 304 Stainless Steel with Plastic linerDouble Walled insulated tumbler.FDA, CPSIA, Prop65, BPA Free",
+          "image": "/api/v1/bots/test_bot/media/z7akn3nj63g7r75dqc36-mug.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://ca.stregisgrp.com/channel/home-office/detail/G133-132"
+            }
+          ]
+        },
+        {
+          "title": "Teddy Bear/Bottle Gift Set",
+          "subtitle": "G006-T - Chester the Teddy BearSuper soft plush, stuffed teddy bearSoft plush snout, ears and short tailDressed with fashionable T shirtD032 - Single pin Bottle 17ozSingle wall stainless steel water bottleErgonomically curved shape fits in most standard cup holdersTwist locking mechanism for leak-proof hydration on the go",
+          "image": "/api/v1/bots/test_bot/media/3x457gsaqiwab8496ufl-bottle.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://ca.stregisgrp.com/channel/home-office/detail/G006-032"
+            }
+          ]
+        },
+        {
+          "title": "Coffee Press, Grinder & Nordic Set",
+          "subtitle": "For the expert home Barista, this exquisite 20oz Swiss Force® Coffee Press comes with the Swiss Force® Grinder, and 2 Nordic Mugs. Packaged in a satin lined presentation gift box. A beautiful gift set that will be appreciated for years to come.",
+          "image": "/api/v1/bots/test_bot/media/2j22ucwdzz50xz6k267h-grinder.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://ca.stregisgrp.com/channel/home-office/detail/G357/G357-207"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-27T18:20:23.944Z",
+    "modifiedOn": "2025-03-01T00:14:50.656Z"
+  },
+  {
+    "id": "builtin_carousel-A4qZby",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Bagpacks - Osprey Daylite® Plus",
+          "subtitle": "Large panel-loading main compartmentAttaches to a variety of compatible Osprey packsMultifunctional interior sleeve for a hydration reservoir accommodates a 2L reservoir (not included), 15” laptop or tabletDual side compression strapsDual water bottle side mesh pocketsFront pocket with organization.",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://shop.keyinnovations.ca/search?Categories=Bags"
+            }
+          ],
+          "image": "https://www.gemline.ca/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068TN00000HM6MnYAL&operationContext=CHATTER"
+        },
+        {
+          "image": "https://www.gemline.ca/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId=068TN00000A1aQLYAZ&operationContext=CHATTER",
+          "subtitle": "Pack smarter and stay organized with the Alba Packing Cube Set that expands and compresses to maximize space.Set includes (1) medium packing cube and (1) large packing cubeMedium Packing Cube fits rolled t-shirts, shorts, socks, and underwear. Large Packing Cube is great for folded shirts, pants, and dresses.",
+          "title": "Alba Compression Packing Cube Set",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://shop.keyinnovations.ca/search?Categories=Bags"
+            }
+          ]
+        },
+        {
+          "title": "Eco-conscious Canvas Drawstring Gift Bag",
+          "subtitle": "This eco-conscious canvas packaging is a thoughtful solution to secure content without wasteGive your promotion, event or company advertising instant gift appeal with this custom drawstring bagDesigned with intention to reuse, this fully customizable medium sized gift bag is ideal for kitting a variety of items.",
+          "image": "https://www.gemline.ca/sfc/servlet.shepherd/version/renditionDownload?rendition=ORIGINAL_Png&versionId=0686Q00000Os9PUQAZ&operationContext=CHATTER",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://shop.keyinnovations.ca/search?Categories=Bags"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-02-28T23:17:04.992Z",
+    "modifiedOn": "2025-02-28T23:32:41.452Z"
+  },
+  {
+    "id": "builtin_carousel-X5Jqjq",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Tech - Marconi Wireless Headphones",
+          "subtitle": "When listening to your music, our Vegan Leather Marconi Wireless Headphones will have you bopping your head in comfort and style. With a charging time of 90 minutes, you can listen for up to 15-18 hours on a single charge. ",
+          "image": "https://d2a4od9fu45l0p.cloudfront.net/image/product/xlarge/e02693c0f0a24ddc900f1ae341bf30c0.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://shop.keyinnovations.ca/search?Categories=Tech"
+            }
+          ]
+        },
+        {
+          "title": "Vandella Wireless Speaker",
+          "subtitle": "Stereo, universal wireless speaker with fabric front speaker coverDual stereo speakers sound with self-standing leg supportBuilt-in microphone for convenient hands free phone callsPlay/Pause, Next/Previous Track & Volume control functionsUSB Drive and Micro SD slots for audio content playback.",
+          "image": "https://d2a4od9fu45l0p.cloudfront.net/image/product/xlarge/6dfca451b73742bca4b6c00f14a50cdb.jpg",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://shop.keyinnovations.ca/search?Categories=Tech"
+            }
+          ]
+        },
+        {
+          "image": "https://d2a4od9fu45l0p.cloudfront.net/image/product/xlarge/c1470852e91b49c9964d7140ed878523.jpg",
+          "title": "Cerruti 1881® Irving Wireless Charger",
+          "subtitle": "The Full Color process requires hi-resolution artwork in jpeg, png or pdf. If artwork extends to the edges of the award or gift, please add a ¼\" bleed. All fonts must be converted to curves (outlines, paths) to ensure correct fonts are being used and there are no delays in your order.",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Shop Now",
+              "url": "https://shop.keyinnovations.ca/search?Categories=Tech"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2025-03-01T00:20:25.418Z",
+    "modifiedOn": "2025-03-01T00:20:25.418Z"
+  }
+]
